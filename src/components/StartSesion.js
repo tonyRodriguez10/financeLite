@@ -49,66 +49,66 @@ const StartSesion = () => {
     }
     
 
-//     function IniciarSesion() {
-//         removerCookies();
-//         const url = "http://localhost:36406/api/Usuarios/" + usuario+","+contrasena;
+    function IniciarSesion() {
+        removerCookies();
+        const url = "http://localhost:36406/api/Usuarios/" + usuario+","+contrasena;
       
-//         axios({
-//           method: 'GET',
-//             withCredentials: false,
-//           url: url,
-//       })
-//       .then((resp) => {
+        axios({
+          method: 'GET',
+            withCredentials: false,
+          url: url,
+      })
+      .then((resp) => {
         
-//         if(resp.data==""){
-//             toast.error(' Upps algo salió mal! ', {
-//                 position: "top-right",
-//                 autoClose: 2000,
-//                 hideProgressBar: false,
-//                 closeOnClick: true,
-//                 pauseOnHover: true,
-//                 draggable: true,
-//                 progress: undefined,
-//                 });
-//         }
-//         else{
-//             toast.info(' Logueado correctamente! ', {
-//                 position: "top-right",
-//                 autoClose: 3000,
-//                 hideProgressBar: false,
-//                 closeOnClick: true,
-//                 pauseOnHover: true,
-//                 draggable: true,
-//                 progress: undefined,
-//                 });
+        if(resp.data==""){
+            toast.error(' Upps algo salió mal! ', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                });
+        }
+        else{
+            toast.info(' Logueado correctamente! ', {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                });
 
-//             setTimeout(() => {
+            setTimeout(() => {
                 
-//             window.location.href = "http://localhost:3000/";
-//             sessionStorage.setItem('logged', 'SI');
-//               }, 4000);
+            window.location.href = "http://localhost:3000/";
+            sessionStorage.setItem('logged', 'SI');
+              }, 4000);
 
             
             
-//         }
+        }
        
-//         //cookies.set('logged', 'si');
+        //cookies.set('logged', 'si');
 
     
-//     }, (error) => {
+    }, (error) => {
 
-//         toast.error(' Usuario o contraseña incorrectos! ', {
-//             position: "top-right",
-//             autoClose: 2000,
-//             hideProgressBar: false,
-//             closeOnClick: true,
-//             pauseOnHover: true,
-//             draggable: true,
-//             progress: undefined,
-//             });
-//     });
+        toast.error(' Usuario o contraseña incorrectos! ', {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            });
+    });
 
-// }
+}
 
 
     return(
@@ -131,7 +131,7 @@ const StartSesion = () => {
                             <input type="checkbox" className="form-check-input" id="exampleCheck1" style={{marginLeft:"1%", backgroundColor:"orange"}}/>
                             <label className="form-check-label" for="exampleCheck1" style={{marginLeft:"-70%"}}>Recordar Contraseña</label>
                         </div>
-                        <button type="button" className='btn' style={{marginTop:"10%",width:"200px", backgroundColor:"orange"}} >Iniciar Sesion</button>
+                        <button type="button" className='btn' style={{marginTop:"10%",width:"200px", backgroundColor:"orange"}} onClick={() => IniciarSesion()}>Iniciar Sesion</button>
                     </form>
                     </div>
             </div>
