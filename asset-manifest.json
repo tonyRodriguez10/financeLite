@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/tonyRodriguez10/financeLite.git/static/css/main.ac7b92cb.css",
-    "main.js": "/tonyRodriguez10/financeLite.git/static/js/main.f3e93c43.js",
-    "index.html": "/tonyRodriguez10/financeLite.git/index.html",
-    "main.ac7b92cb.css.map": "/tonyRodriguez10/financeLite.git/static/css/main.ac7b92cb.css.map",
-    "main.f3e93c43.js.map": "/tonyRodriguez10/financeLite.git/static/js/main.f3e93c43.js.map"
+    "main.css": "/financeLite.git/static/css/main.ac7b92cb.css",
+    "main.js": "/financeLite.git/static/js/main.f3e93c43.js",
+    "index.html": "/financeLite.git/index.html",
+    "main.ac7b92cb.css.map": "/financeLite.git/static/css/main.ac7b92cb.css.map",
+    "main.f3e93c43.js.map": "/financeLite.git/static/js/main.f3e93c43.js.map"
   },
   "entrypoints": [
     "static/css/main.ac7b92cb.css",
