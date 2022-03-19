@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/financeLite/static/css/main.ac7b92cb.css",
-    "main.js": "/financeLite/static/js/main.f3e93c43.js",
+    "main.js": "/financeLite/static/js/main.77a7fe4e.js",
     "index.html": "/financeLite/index.html",
     "main.ac7b92cb.css.map": "/financeLite/static/css/main.ac7b92cb.css.map",
-    "main.f3e93c43.js.map": "/financeLite/static/js/main.f3e93c43.js.map"
+    "main.77a7fe4e.js.map": "/financeLite/static/js/main.77a7fe4e.js.map"
   },
   "entrypoints": [
     "static/css/main.ac7b92cb.css",
-    "static/js/main.f3e93c43.js"
+    "static/js/main.77a7fe4e.js"
   ]
 }
