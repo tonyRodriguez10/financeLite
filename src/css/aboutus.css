@@ -1,0 +1,8 @@
+.separador{
+    border-top: medium double #369;
+}
+
+.borders{
+    border-style: double;
+    padding: 1% 0%;
+}

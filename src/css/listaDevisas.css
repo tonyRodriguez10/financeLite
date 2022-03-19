@@ -1,0 +1,17 @@
+.hoverItems:hover{
+    color: orange
+}
+
+.hoverItems{
+text-decoration: none;
+color: black;
+}
+
+.font{
+    color: black;
+}
+
+.borders{
+    border-style: double;
+    padding: 1% 0%;
+}

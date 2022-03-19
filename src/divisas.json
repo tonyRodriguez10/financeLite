@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name" : "Colón",
+        "icon" : "₡",
+        "value" : 1
+    },
+    {
+        "id": 2,
+        "name" : "Dolar",
+        "icon" : "$",
+        "value" : 642.89
+    },
+    {
+        "id": 3,
+        "name" : "Libra esterlina",
+        "icon" : "£",
+        "value" : 872.42
+    },
+    {
+        "id": 4,
+        "name" : "Euro",
+        "icon" : "€",
+        "value" : 729.70
+    },
+    {
+        "id": 4,
+        "name" : "Dolar Canadiense",
+        "icon" : "$",
+        "value" : 504.94 
+    },
+    {
+        "id": 5,
+        "name" : "Yuán",
+        "icon" : "¥",
+        "value" : 101.00
+    },
+    {
+        "id": 6,
+        "name" : "Franco suizo",
+        "icon" : "Fr",
+        "value" : 694.68 
+    }
+]

@@ -1,0 +1,42 @@
+html{
+  min-height: 100%;
+  position: relative;
+   }
+   body{
+    margin: 0;
+   }
+   #footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 205px;
+    color: white;
+   }
+   .page-footer2 {
+     position: absolute;
+     margin-top: 20px;
+     padding-top: 20px;
+     background-color: #000000;
+   }
+   .page-footer2 .footer-copyright {
+     
+     height: 50px;
+     line-height: 50px;
+     color: rgba(255, 255, 255, 0.8);
+     background-color: rgba(51, 51, 51, 0.08);
+   }
+/* 
+   html {
+    
+  }
+  body {
+    
+  }
+  footer {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+  } */

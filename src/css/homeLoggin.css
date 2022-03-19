@@ -1,0 +1,17 @@
+.rectangle{
+    border: 3px solid #000000;
+    height: 35rem;
+}
+.square{
+    border: 3px solid #050505;
+    height: 17rem;
+    width: 70%;
+    text-align: center;
+    margin: 4% 15%;
+    padding-top: 2%;
+}
+
+.inputs {
+    width: 90%;
+    margin: 0% 5%;
+}

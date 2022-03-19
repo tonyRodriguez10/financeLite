@@ -1,17 +1,77 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Header from "./components/Header";
+import HeaderNotLogged from "./components/HeaderNotLogged";
+import Footer from "./components/Footer";
+import HomeLoggin from "./components/HomeLoggin";
+import HomeLoggout from "./components/HomeLoggout";
+import axios from 'axios'
+import address from './components/StartSesion';
+import { Provider, useSelector } from 'react-redux';
+import store from './redux/store';
+
+function Greeting() {
+  
+
+
+  if(sessionStorage.getItem('logged')=="SI"){
+
+
+    return <Header />
+
+  }
+  else{
+
+  return <HeaderNotLogged />
+
+  }
+
+}
+
+// function Greeting(props) {
+//   const isLoggedIn = props.isLoggedIn;
+
+//   if (isLoggedIn) {
+
+//     return <Header />
+//   }
+//   else{
+
+//   return <HeaderNotLogged />
+//   }
+// }
+
+// function IniciarSesion(){
+//   const url = "http://localhost:36406/api/Usuarios/" + 1 ;
+//   var logged;
+
+//   axios({
+//     method: 'GET',
+//       withCredentials: false,
+//     url: url,
+// })
+
+// .then((resp) => {
+  
+//   logged=true;
+// }, (error) => {
+//   logged=false;
+// });
+
+// }//final de funcion
 
 ReactDOM.render(
+  <Provider store={store}>
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <Router>
+      <Greeting  />
+    </Router>
+    <div style={{marginTop:"15%"}}>
+    <Footer />
+    </div>
+  </React.StrictMode>
+  </Provider>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
